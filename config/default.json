@@ -1,0 +1,10 @@
+{
+    "jwtSecret": "coca-secret",
+    "mysql_connection":{
+        "dialect":"mysql",
+        "host":"localhost",
+        "username":"root",
+        "password":"mysql",
+        "database":"cookingshop"
+    }
+}

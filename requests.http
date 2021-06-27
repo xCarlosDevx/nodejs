@@ -1,0 +1,29 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozfSwiaWF0IjoxNjI0NDI1MTEwLCJleHAiOjE2MjQ1MTE1MTB9.jM5JFGvBRq-1bzSNhMsGwufZa8ZKljYo5wQr_CfEz8k
+
+POST http://localhost:3000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"coca",
+    "apellido":"suero",
+    "email":"nobulto@hotmail.com",
+    "password":"123456",
+    "role":"admin"
+}
+
+###
+
+POST http://localhost:3000/api/usuarios/signin
+Content-Type: application/json
+
+{
+    "email":"nobulto@hotmail.com",
+    "password":"123456"
+}
+
+###
+
+GET http://localhost:3000/api/verificacion
+Content-Type: application/x-www-form-urlencoded
+x-auth-token: {{token}}
+

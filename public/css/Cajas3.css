@@ -1,0 +1,23 @@
+.caja {
+    width: 100% auto;  
+    height: 15.8rem;
+
+    background: #ffc000;
+    border: 1.5px solid #333;
+    margin: 0 auto;
+    padding: 1rem; 
+    }
+
+.caja img {
+    
+    float: left;
+    margin-right: 50px;
+    margin-left: 300px;
+    width: 400px;
+    height: 250px;
+    }
+
+.caja p {
+    font-size:22px;
+    width: 80%;
+    }

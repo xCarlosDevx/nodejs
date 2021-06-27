@@ -1,0 +1,18 @@
+Menu {
+    width: 100% auto;  
+    height: 38.3rem;
+
+    background: #ffc000;
+    border: 1.5px solid #333;
+    margin: 0 auto;
+    padding: 1rem; 
+    }
+    
+.Imagenes img {
+    width: 300px;
+    height: 200px;
+    }
+
+td {
+        text-align: center;
+    }

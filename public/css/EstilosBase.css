@@ -1,0 +1,239 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #000000;
+  font-size: 1.1rem; /*tamaño de las letras*/
+  line-height: 1.3em; /* interlineado */
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 0.3m;
+  text-align: center;
+}
+
+/* parrafos */
+p {
+  margin-bottom: 1.5em; /*margen inferior funciona como enter entre parrafos*/
+}
+
+img {
+  border-radius: 5px;
+}
+
+.contenido {
+  display:none;
+ 
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+.container12 {
+  display:block;
+  width: 85%; 
+  margin: 0 auto; 
+  
+}
+
+.container1 { 
+  display:block;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+
+.container2 {
+  display:none;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.container3 {
+  display:none;
+  width: 100%; 
+  margin: 0 auto;
+}
+.div{
+margin: 100px;
+}
+
+.container5 { 
+  display:none;
+  width: 100%; 
+  margin: 0 auto;
+  }
+
+.header {
+  background: #333;
+  color: white;
+  padding: 1rem 0;
+
+  /* hacer el menu fijo */
+  /*position: fixed;
+  left: 0;
+  top: 0;*/
+  /* ocuapamos todo el ancho */
+  right: 0;
+}
+
+.header a {
+  color: #ffc000;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  /* lo alineamos al centro */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 10px;
+  font-size: 1.5em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: #ffc0002f;
+}
+
+.main {
+  padding-top: 3.3rem;
+}
+
+/*PIE DE PAGINA*/
+.footer { 
+  background: #333;
+  color: #ffc000;
+  padding: 0.1rem 0;
+  text-align: center;
+}
+
+/*Codigo Modal de jorge*/
+
+.flex{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.h2 {
+ margin-top: 10px;
+  font-size:25px;
+   position: relative;
+    left: 40px;
+}
+
+.BotonC {
+  border:  1px #ffc000 solid;
+  box-shadow:2px 2px 2px 2px #333; 
+  background: transparent;
+  margin-bottom: 10px;
+    position: relative;
+     left: 110px;
+ }
+ 
+
+.imput_controls{
+  
+  border:  1px #333 double;
+  
+width: 90%;
+display: flex;
+margin: 10px;
+}
+ 
+.modal{
+   
+	display: none;
+	position: fixed;
+	z-index:1;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 300px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+	animation-duration: 1s;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+.close{
+  color: #ff0000;
+	font-size:30px;
+	font-weight: bold;
+    position: relative;
+    right: 10px;
+    transition: .5s;
+    bottom:23px;
+}
+.close:hover{
+	color:#920000;
+    transition: .5s;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.modal-body{
+	padding: 5px;
+}
+
+@media screen and (max-width:900px){
+	.contenido-modal{
+		width: 70%;
+	}
+	.textos{
+		padding: 150px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.textos{
+		padding:50px;
+	}
+}

@@ -1,0 +1,184 @@
+/*FONT*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+/*RESTYLE TAG*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* Utility */
+
+.boton_personalizado{
+    text-decoration:underline;
+   
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-left:3px; 
+	padding-bottom:10px ;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 3px solid #000;
+  }
+.boton_personalizado:hover{
+    color: #ffcc00;
+    background-color: #ffffff;
+	cursor: pointer;
+  }
+
+/* login */
+
+body .container .feature-one{width:100%;height:70px;position:relative; background: #FFFFFF}
+body .container .feature-two{width:100%;height:800px;color:#fff;overflow:hidden;position:relative}
+
+.header {
+  background: #333;
+  color: #ffc000;
+
+  /* hacer el menu fijo */
+  position:relative ;
+  left:0px;
+  top: 0;
+  /* ocuapamos todo el ancho */
+  right: 0;
+}
+
+.header a {
+  color: #000000;
+}
+
+.container-login100 {
+background-image: url("../Imagenes/fondo2.jpg");
+  background-repeat: no-repeat;
+	background-position: left;
+	background-size:980px;
+}
+
+.container-login10 {    
+  background-repeat: no-repeat;
+	background-position: left;
+	background-size:980px;
+}
+
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  /* lo alineamos al centro */
+  align-items: right;
+
+}
+
+/* logo */
+.logo {
+height:80px;
+width: 10px;
+}
+
+.wrap-login100 {
+  width: 31%;
+	height: 541px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+/*-Login100 more*/
+
+.login100-more {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% - 520px);
+  position: relative;
+  z-index: 1;
+}
+
+/* Form*/
+
+.login100-form {
+  width: 100%;
+    display:flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.login100-form-title {
+ 
+	width: 100%;
+  font-family: Poppins-Bold;
+  font-size: 36px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+	padding: 2px;
+  margin: 0px;
+}
+
+/*Input*/
+
+.wrap-input100 {
+	width: 100%;
+	height: 50px;
+  position: center;
+  margin-bottom:15px;
+}
+
+.input100 {
+  display: block;
+  width: 350px;
+  height: 30px;
+  background: #ffff;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  color: #000;
+  padding: 0 2px;
+}
+.input {
+  width: 300px;
+  height: 30px;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+}
+
+
+div {
+font-size: 20px;
+}
