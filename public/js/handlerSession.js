@@ -49,9 +49,8 @@ loginForm.addEventListener("submit", (e) => {
                     })
                 }
                 if (responseObject.token) {
-                    tokenElement.innerText = responseObject.user
                     localStorage.setItem('user_with_token', JSON.stringify(responseObject));
-                    window.location.href = "/"
+                    window.history.back();
                 }
             }
             // Traduce el String nuevamente en JSon //
