@@ -104,7 +104,7 @@ class Carrito {
         let productoLS;
 
         //Comprobar si hay algo en LS
-        if (localStorage.getItem('productos') === null) {
+        if (!localStorage.getItem('productos')) {
             productoLS = [];
         }
         else {

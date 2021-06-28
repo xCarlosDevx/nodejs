@@ -15,6 +15,7 @@ app.use(express.static('public'))
 
 /* Rutas*/
 app.use('/api/usuarios', require('./routes/user/user.routes'))
+app.use('/api/pedidos', require('./routes/pedidos/pedidos.routes'))
 app.use('/api/verificacion', require('./routes/auth/auth.routes'))
 
 const Role = db.Roles;

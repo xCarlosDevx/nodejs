@@ -32,18 +32,13 @@ module.exports = (connectionDB) => {
             notNull: false,
             notEmpty: true
         },
-        id_user: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            notEmpty: true
-        },
         direccion_pedido: {
             type: DataTypes.STRING,
             allowNull: false,
             notEmpty: true
         },
         fecha_pedido: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: false,
             notEmpty: true
         },
@@ -51,11 +46,6 @@ module.exports = (connectionDB) => {
             type: DataTypes.STRING,
             allowNull: false,
             notEmpty: true
-        },
-        total: {
-            type: DataTypes.STRING,
-            notEmpty: true,
-            allowNull: false,
         }
     })
     return Pedido;

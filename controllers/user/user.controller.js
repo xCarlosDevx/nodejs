@@ -78,7 +78,7 @@ exports.signin = async (req, res) => {
                 id: findUser.id
             }
         }
-        const user = _.pick(findUser, ['nombre', 'apellido', 'email', 'role', 'id'])
+        const user = _.pick(findUser, ['nombre', 'apellido', 'email', 'role'])
         jwt.sign(payload, config.get('jwtSecret'), { expiresIn: 86400 }, (err, token) => {
             if (err) throw err;
             findUser.getRoles().then((roles)=>{

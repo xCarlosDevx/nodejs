@@ -27,9 +27,13 @@ let db = {}
 
 db.Sequelize = Sequelize
 db.connectionDB = connectionDB
-db.pedidos = Pedidos(connectionDB)
+db.Pedidos = Pedidos(connectionDB)
 db.User = User(connectionDB)
 db.Roles = Roles(connectionDB)
+
+db.User.hasMany(db.Pedidos, {
+    foreignKey: 'id_user'
+})
 
 db.Roles.belongsToMany(db.User, {
     through: "user_roles",
@@ -42,6 +46,7 @@ db.User.belongsToMany(db.Roles, {
     foreignKey: 'userId',
     otherKey: 'roleId'
 })
+
 
 db.ROLES = ['admin', 'user']
 
