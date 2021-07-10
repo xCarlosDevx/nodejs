@@ -14,6 +14,10 @@ app.use(morgan('dev'))
 app.use(express.static('public'))
 
 /* Rutas*/
+server.get('/start', (req, res) => {
+    res.send('Bienvenido a mi API!!');
+})
+
 app.use('/api/usuarios', require('./routes/user/user.routes'))
 app.use('/api/pedidos', require('./routes/pedidos/pedidos.routes'))
 app.use('/api/verificacion', require('./routes/auth/auth.routes'))
